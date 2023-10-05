@@ -368,21 +368,86 @@ function checkSpeed(speed) {
   }
 }
 
+// //EVEN AND ODD NOS; 
+// for  (let i = 0; i <=10; i++){
+//   if (i % 2 ==0) console.log(i, 'Even');
+//   else console.log(i, 'Odd')
+// } 
 
-for  (let i = 0; i <=10; i++){
-  if (i % 2 ==0) console.log('Even');
-  else console.log('Odd')
-   
-} 
+// const message = (i % 2==0 ) ? 'EVEN' :  'ODD'
+// console.log(i, message);
+ 
 
+//COUNTING TRUTHY VALUES EXS;
+const array = [1,2,5,7,8,5,6,4,5,2, '', null , '!' ];
+console.log (nameTruthys (array));
+
+function nameTruthys (arrays){
+  let count = 0;
+  for (let value of array)
+  if (value)
+    count ++;
+  return count;
+
+};
+
+
+let user = {
+  name: 'Aloyse' ,
+  age : 20,
+  message : "He is very handsome :)"
+}
+console.log(user.name);
+
+
+
+
+//Sum of Multiple of 5 and 3
+console.log(sum(10));
+
+function sum(limit) {
+    let sum = 0;
+    for (let i = 0; i <=10; i++)
+    if (i % 3 === 0 || i % 5 === 0)
+    sum += i
+    return sum;
+}
  
 
 
+//Student Grades
+function calculateGrade(marks) {
+  if (marks >= 90) {
+    return 'A';
+  } else if (marks >= 80) {
+    return 'B';
+  } else if (marks >= 70) {
+    return 'C';
+  } else if (marks >= 60) {
+    return 'D';
+  } else {
+    return 'F';
+  }
+}
+
+// Example usage:
+const studentMarks = 50;
+const grade = calculateGrade(studentMarks);
+console.log(`Grade for ${studentMarks} marks is ${grade}`);
 
 
 
 
-//Breakng from a loop
+
+// Ex 10, Stars
+for (let i = 1; i <= 10; i++) {
+  let stars = '*'.repeat(i);
+  console.log(stars);
+}
+
+
+
+ 
 
 
 
