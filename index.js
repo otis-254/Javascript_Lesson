@@ -376,26 +376,26 @@ function checkSpeed(speed) {
 
 // const message = (i % 2==0 ) ? 'EVEN' :  'ODD'
 // console.log(i, message);
- 
+
 
 //COUNTING TRUTHY VALUES EXS;
-const array = [1,2,5,7,8,5,6,4,5,2, '', null , '!' ];
-console.log (nameTruthys (array));
+const array = [1, 2, 5, 7, 8, 5, 6, 4, 5, 2, '', null, '!'];
+console.log(nameTruthys(array));
 
-function nameTruthys (arrays){
+function nameTruthys(arrays) {
   let count = 0;
   for (let value of array)
-  if (value)
-    count ++;
+    if (value)
+      count++;
   return count;
 
 };
 
 
 let user = {
-  name: 'Aloyse' ,
-  age : 20,
-  message : "He is very handsome :)"
+  name: 'Aloyse',
+  age: 20,
+  message: "He is very handsome :)"
 }
 console.log(user.name);
 
@@ -406,13 +406,13 @@ console.log(user.name);
 console.log(sum(10));
 
 function sum(limit) {
-    let sum = 0;
-    for (let i = 0; i <=10; i++)
+  let sum = 0;
+  for (let i = 0; i <= 10; i++)
     if (i % 3 === 0 || i % 5 === 0)
-    sum += i
-    return sum;
+      sum += i
+  return sum;
 }
- 
+
 
 
 //Student Grades
@@ -436,9 +436,6 @@ const grade = calculateGrade(studentMarks);
 console.log(`Grade for ${studentMarks} marks is ${grade}`);
 
 
-
-
-
 // Ex 10, Stars
 for (let i = 1; i <= 10; i++) {
   let stars = '*'.repeat(i);
@@ -447,7 +444,8 @@ for (let i = 1; i <= 10; i++) {
 
 
 
- 
+
+
 
 
 
